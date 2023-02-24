@@ -77,7 +77,7 @@ chatContainer.scrollTop= chatContainer.scrollHeight;
 const messageDiv= document.getElementById(uniqueId);
 Loader(messageDiv);
 //http://localhost:5000/    //https://aidan-ai.onrender.com/
-const response = await fetch ('http://localhost:5000/',{
+const response = await fetch ('https://aidan-ai.onrender.com/',{
     method :'POST',
     headers : {
         'content-Type' : 'application/json'
