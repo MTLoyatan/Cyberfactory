@@ -1,7 +1,7 @@
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 import send from './assets/send.svg';
-import autosize from 'https://cdn.skypack.dev/autosize@v4.0.2';
+/*import autosize from 'https://cdn.skypack.dev/autosize@v4.0.2';*/
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
@@ -76,8 +76,8 @@ chatContainer.scrollTop= chatContainer.scrollHeight;
 
 const messageDiv= document.getElementById(uniqueId);
 Loader(messageDiv);
-
-const response = await fetch ('https://aidan-ai.onrender.com',{
+//http://localhost:5000/    //https://aidan-ai.onrender.com/
+const response = await fetch ('http://localhost:5000/',{
     method :'POST',
     headers : {
         'content-Type' : 'application/json'
